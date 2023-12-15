@@ -1,0 +1,83 @@
+#mainAdmin {
+    max-width: 1200px;
+    margin: var(--spacing-100) auto;
+}
+.buscar {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-24);
+    margin-bottom: var(--spacing-36);
+}
+
+.lupa {
+    font-size: var(--font-jumbo);
+}
+
+.input_buscar {
+    padding: var(--spacing-8) var(--spacing-8);
+    border-radius: 8px;
+    border: 1px solid var(--dark-solid);
+    font-size: var(--font-medium);
+    flex: 0 0 35%;
+}
+
+.div__Lista {
+    display: flex;
+    gap: var(--spacing-16);
+    flex-direction: column;
+}
+
+.div__titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div__titulo h2 {
+    font-size: var(--font-jumbo) ;
+}
+
+.div__titulo span {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-16);
+    font-size: var(--font-large);
+    font-weight: 700;
+}
+
+.div__titulo span a {
+    display: flex;
+    font-size: var(--font-medium);
+}
+
+.tablaArticulos {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+}
+
+.tablaArticulos__Header {
+    margin-bottom: var(--spacing-16);
+    background-color: white;
+    color: var(--dark-solid);
+}
+
+.tablaArticulos__Header,
+.rowTabla {
+    display: grid;
+    grid-template-columns: 40px 1fr 3fr 3fr 40px 40px;
+    align-items: center;
+    gap: var(--spacing-24);
+}
+
+
+.agregar_item{
+    color:  rgb(228, 61, 61);
+    font-size: xx-large;
+}
+
+
+
+.eliminarItem{
+    color: rgb(228, 61, 61);
+}

@@ -1,0 +1,18 @@
+img{
+    width: 30%;
+} 
+
+.contenedor {
+    text-align: center;
+}
+  
+.contenedor img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 4.5em; /* Cambiar el tamaño del texto */
+  }

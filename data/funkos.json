@@ -1,0 +1,62 @@
+[
+    {
+        "id":1,
+        "SKU": "ASDJFK852",
+        "collection":"STAR WARS",
+        "name": "STORMTROOPER LIGHTSABER",
+        "price":"1799,99",
+        "stock":5,
+        "img": "/images/trooper-1 1.svg",
+        "img_alt":"Figura coleccionable Funko de Stormtropper",
+        "img_back": "/images/trooper-1 1.svg",
+        "img_alt_back":"Dorso figura coleccionable Funko de Stormtropper",
+        "cuotas":"3 CUOTAS SIN INTERÉS",
+        "descuento":"10%",
+        "licencia":"Nueva Suscripción"
+    },
+    {
+        "id":2,
+        "SKU": "AS32JFK852",
+        "collection":"POKEMON",
+        "name": "PIDGEOTTO",
+        "price":"1799,99",
+        "stock":10,
+        "img": "/images/pidgeotto-1 1.svg",
+        "img_alt":"Figura coleccionable Funko de Pidgeotto",
+        "img_back": "/images/pidgeotto-1 1.svg",
+        "img_alt_back":"Dorso figura coleccionable Funko de Pidgeotto",
+        "cuotas":"3 CUOTAS SIN INTERÉS",
+        "descuento":"10%",
+        "licencia":"Nueva Suscripción"
+    },
+    {
+        "id":3,
+        "SKU": "KKASFD5822",
+        "collection":"HARRY POTTER",
+        "name": "LUNA LOVEGOOD LION MASK",
+        "price":"1799,99",
+        "stock":10,
+        "img": "/images/luna-1 1.svg",
+        "img_alt":"Figura coleccionable Funko de Snape de la pelicula de Harry Potter",
+        "img_back": "/images/luna-1 1.svg",
+        "img_alt_back":"Dorso figura coleccionable Funko de Snape de la pelicula de Harry Potter",
+        "cuotas":"3 CUOTAS SIN INTERÉS",
+        "descuento":"10%",
+        "licencia":"Nueva Suscripción"
+    },
+    {
+        "id":4,
+        "SKU": "BBADAK8R52",
+        "collection":"STAR WARS",
+        "name": "BABY YODA BLUEBALL",
+        "price":"1799,99",
+        "stock":10,
+        "img": "/images/baby-yoda-1 1.svg",
+        "img_alt":"Figura coleccionable de Baby Yoda  (Grogu) - The Mandajorian Saga, edición limitada.",
+        "img_back": "/images/baby-yoda-1 1.svg",
+        "img_alt_back":"Dorso figura coleccionable de Baby Yoda  (Grogu) - The Mandajorian Saga, edición limitada.",
+        "cuotas":"3 CUOTAS SIN INTERÉS",
+        "descuento":"10%",
+        "licencia":"Suscripción Anterior"
+    }
+]

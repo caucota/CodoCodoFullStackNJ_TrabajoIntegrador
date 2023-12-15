@@ -1,0 +1,18 @@
+<% funkos.forEach((oneFunko)=> { %>
+    <cart class="cartItem glide__slide">
+        <div>
+            <%if(oneFunko.licencia == "Nueva Suscripción") { %>
+            <span class="mensaje_Nuevo">NUEVO</span>
+            <% } %>
+            <img src="<%=oneFunko.img%>" alt="<%=oneFunko.img_alt%>" style="width:60%">
+        </div>
+        <article>
+            <p class="categoria_precio"><%=oneFunko.collection%></p>
+            <h3>
+                <a href="/item/<%=oneFunko.name%>"><%=oneFunko.name%></a>
+            </h3>
+            <p class="categoria_precio">$ <%=oneFunko.price%></p>
+            <p class="cuotasItem"><%=oneFunko.cuotas%></p>
+        </article>
+    </cart>
+<% }) %>

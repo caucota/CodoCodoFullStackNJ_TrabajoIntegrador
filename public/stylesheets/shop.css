@@ -1,0 +1,123 @@
+.container_shop{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2px;
+    margin-top: 7rem;
+}
+
+.main_shop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carousel__lista{
+    display:flex;
+}
+
+.form_shop{
+    margin-left: 10rem;
+}
+
+.subtitulo{
+    font-size: 24px;
+    line-height: 29.05px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.input_tipo1{
+    width: 243.03px;
+    height: 44.28px;
+    border-radius: 6px;
+    border: 2px solid #30343F;
+    padding: 1rem;
+    font-size: 20px;
+    margin-bottom: 3rem;
+}
+
+
+.label_min_max{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    padding-right: 1rem;
+}
+
+.input_min_max{
+    width: 59.14px;
+    height: 27.52px;
+    text-align: center;
+    border-radius: 6px;
+    border: 2px solid #30343F;
+    padding: 4px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+}
+
+.container_opciones_filtro{
+    margin-left: 2rem;
+}
+
+.container_opciones_filtro div{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.check{
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+}
+
+.label_filtro_opciones{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.78px;
+}
+
+.container_buttons{
+    display: grid;
+    grid-template-columns: 0.5fr 5fr;
+    gap: 2px;
+    margin-top: 7rem;
+}
+
+.div_before_buttons{
+    margin-left: 2rem;
+}
+
+.div_buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.square_button {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid  rgb(141, 136, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Tamaño del número */
+    color: black;
+  }
+
+.button_grey {
+    background-color: rgb(197, 194, 194);
+    color:rgba(243, 239, 239, 0.87);
+}
+
+.button_red {
+    border: 1px solid  red;    
+    color:red;
+}
+

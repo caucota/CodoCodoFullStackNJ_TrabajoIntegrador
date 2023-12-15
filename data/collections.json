@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "collection": "STAR WARS",
+    "serie": "STAR WARS & THE MANDALORIAN",
+    "descripcion": "Disfruta de una saga que sigue agregando personajes a su colección.",
+    "img": "/images/baby-yoda-1 1.svg",
+    "img_alt": "Figura de Funko de Grogu de la serie The Mandalorian"
+  },
+  {
+    "id": 2,
+    "collection": "POKEMON",
+    "serie": "POKEMON INDIGO",
+    "descripcion": "Atrapa todos los que puedas y disfruta de una colección llena de amigos.",
+    "img": "/images/vulpix-1 1.svg",
+    "img_alt": "Figura de Funko de Vulpix de la serie Pokemon"
+  },
+  {
+    "id": 3,
+    "collection": "HARRY POTTER",
+    "serie": "HARRY POTTER",
+    "descripcion": "Revive los recuerdos de una saga llena de magia y encanto.",
+    "img": "/images/snape-patronus-1 1.svg",
+    "img_alt": "Figura coleccionable Funko de Snape de la pelicula de Harry Potter"
+  }
+]

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include("partials/head")%>
+  <body>
+    <%-include("partials/header")%>
+    <div class="container_shop">
+      <aside class="form_shop">
+        <div>
+            <h4 class="subtitulo" for="buscar">BUSCAR</h4>
+            <input class="input_tipo1" type="text" id="buscar" placeholder="Item o categoria" value=<%=filtro%>></input> 
+        </div>
+        <div>
+            <h4 class="subtitulo" for="ordenar">ORDERNAR POR</h4>
+            <select class="input_tipo1" name="Mayor a menor" id="ordenad" placeholder="Mayor a menor">
+              <option value="Mayor a menor">Mayor a menor</option>
+              <option value="Menor a mayor">Menor a mayor</option>
+            </select>
+        </div>
+        <div>
+          <h4 class="subtitulo">PRECIO</h4>
+          <div>
+            <label class="label_min_max" for="min">MIN</label>
+            <input class="input_min_max" type="number" id="minimo" placeholder="0">
+            <span class="label_min_max">-</span>
+            <label class="label_min_max" for="max">MAX</label>
+            <input class="input_min_max" type="number" id="maximo" placeholder="0">
+          </div>
+        </div>
+        <div>
+          <h4 class="subtitulo">FILTRAR</h4>
+          <div class="container_opciones_filtro">
+            <div>
+              <input class="check" type="checkbox">
+              <label class="label_filtro_opciones" for="nuevos">NUEVOS</label>
+            </div>
+            <div>
+              <input class="check" type="checkbox">
+              <label class="label_filtro_opciones" for="ofertas">OFERTAS</label>
+            </div>
+            <div>
+              <input class="check" type="checkbox">
+              <label class="label_filtro_opciones" for="especial">EDICIÓN ESPECIAL</label>
+            </div>
+            <div>
+              <input class="check" type="checkbox">
+              <label class="label_filtro_opciones" for="favoritos">FAVORITOS</label>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <main class="main_shop">
+          <%-include("partials/funkosList")%>
+          <%-include("partials/funkosList")%>
+          <%-include("partials/funkosList")%>
+      </main>
+    </div>
+
+    <div class="container_buttons">
+      <div class="div_before_buttons">
+      </div>
+      <div class="div_buttons">
+        <button class="square_button button_grey"><</button>
+        <button class="square_button button_red">1</button>
+        <button class="square_button">2</button>
+        <button class="square_button">...</button>
+        <button class="square_button">9</button>
+        <button class="square_button">10</button>
+        <button class="square_button">></button>
+      </div>  
+  </div>
+
+    <%-include("partials/footer")%>
+    <script>
+        var input = document.getElementById("buscar");
+        input.addEventListener("keypress", function(event) {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            window.location.replace("/shop/"+input.value); 
+          }
+        });      
+    </script>
+  </body>
+</html>

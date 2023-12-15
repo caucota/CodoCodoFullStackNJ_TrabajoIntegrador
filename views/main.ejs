@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include("partials/head")%>
+
+  <body>
+    <%-include("partials/header")%>
+    <section class="hero">
+      <article class="hero__content container">
+        <h3 class="hero__title">Nuevos Ingresos</h3>
+        <p class="hero__text">Descubrí el próximo Funko Pop de tu colección</p>
+        <a class="hero__link" href="/shop">SHOP</a>
+      </article>
+    </section>
+    <main>
+        <div>
+            <% collections.forEach((oneCollection, index)=> { %>
+                <%if(index % 2 == 0){ %>
+                    <section class="sectionCollection">
+                        <article>
+                            <h3><%=oneCollection.serie%></h3>
+                            <p><%=oneCollection.descripcion%></p>
+                            <a href="/shop/<%=oneCollection.collection%>">VER COLECCIÓN</a>
+                        </article>
+                        <div>
+                            <img src="<%=oneCollection.img%>" alt="<%=oneCollection.img_alt%>" style="width:60%">
+                        </div>
+                    </section>
+    
+                <% }else { %>
+                    <section class="sectionCollection">
+                        <div>
+                            <img src="<%=oneCollection.img%>" alt="<%=oneCollection.img_alt%>" style="width:60%">
+                        </div>
+                        <article>
+                            <h3><%=oneCollection.serie%></h3>
+                            <p><%=oneCollection.descripcion%></p>
+                            <a href="/shop/<%=oneCollection.collection%>">VER COLECCIÓN</a>
+                        </article>
+                    </section>
+    
+                <%} %>
+                
+            <%    } )  %>
+        </div>
+        <h1 class="title_nuevos">ÚLTIMOS LANZAMIENTOS</h1>
+        <!-- <div class="carousel">
+            <div class="carousel__contenedor">
+                    <button aria-label="Anterior" class="carousel__anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <%-include("partials/funkosList")%>
+
+                <button aria-label="Anterior" class="carousel__anterior">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div role="tablist" class="carousel__indicadores"></div>
+        </div> -->
+
+        <div class="carousel">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <div class="carousel__lista glide__slides">
+                        <%-include("partials/funkosList")%>
+                    </div>
+                </div>
+      
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left carousel__anterior" data-glide-dir="<"><</button>
+                    <button class="glide__arrow glide__arrow--right carousel__siguiente" data-glide-dir=">">></button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <%-include("partials/footer")%>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      new Glide('.glide', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 3,
+
+      }).mount();
+    </script>
+    </script>    
+  </body>
+  <link rel="stylesheet" href="/stylesheets/glide.core.min.css">  
+  <link rel="stylesheet" href="/stylesheets/glide.core.theme.min.css">  
+</html>

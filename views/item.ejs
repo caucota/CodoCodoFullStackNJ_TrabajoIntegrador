@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include("partials/head")%>
+  <body>
+    <%-include("partials/header")%>
+    <main >
+        <div class="cartItem item">
+          <div>
+              <img src="<%=funko.img%>" alt="<%=funko.img_alt%>" style="width:65%">
+          </div>
+          <article>
+              <label><%=funko.collection%></label>
+              <h1>
+                  <%=funko.name%>
+              </h1>
+              <p>$ <%=funko.price%></p>
+              <input type="number"/>
+              <button class="buttonAdd">+</button>
+              <button class="buttonAdd">-</button>
+              <a href="/Cart"><button class="buttonAddCart">Agregar al carrito</button></a>
+              <div>
+                <label> <a href="http://">Ver medios e pagos:</a></label>
+                <p> $ <%=funko.cuotas%></p>
+              </div>
+          </article>
+        </div>
+    </main>
+    <%-include("partials/footer")%>
+  </body>
+</html>

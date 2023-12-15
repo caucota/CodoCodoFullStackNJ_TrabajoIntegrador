@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include("partials/head")%>
+  <body>
+    <%-include("partials/header_admin")%>
+    <main id="mainAdmin" >
+      <div class="buscar">
+          <iconify-icon class="lupa" icon="charm:search"></iconify-icon>
+          <input class="input_buscar" type="text" name="buscar" placeholder="código, nombre o categoria">
+      </div>
+      <div class="div__Lista">
+          <div class="div__titulo">
+              <h2>LISTADO DE PRODUCTOS</h2>
+              <span>AGREGAR<a href="/create"><iconify-icon icon="bxs:plus-square" class="agregar_item"></iconify-icon></a></span>
+          </div>
+          <div class="tablaArticulos">
+              <header class="tablaArticulos__Header">
+                  <h3>ID</h3>
+                  <h3>Código</h3>
+                  <h3>Nombre del Producto</h3>
+                  <h3>Categoría</h3>
+              </header>
+              <% funkos.forEach(funko => { %>
+              <article class="rowTabla">
+                  <p><%= funko.id %></p>
+                  <p><%= funko.SKU %></p>
+                  <p><%= funko.name %></p>
+                  <p><%= funko.collection %></p>
+                  <a href="/edit/<%= funko.id %>"><iconify-icon icon="mdi:pencil" ></iconify-icon></a>
+                  <a href="/error"><iconify-icon icon="heroicons-solid:trash" class="eliminarItem"></iconify-icon></a>
+              </article>
+              <% }); %>
+              
+          </div>
+      </section>
+  </main>
+  <%-include("partials/footer")%>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+  </body>
+</html>
